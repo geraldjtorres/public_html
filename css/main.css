@@ -87,15 +87,15 @@ header{
 /* About me
 ================================ */
 
-.about-me{
+#about-me{
     padding-bottom: 50px;
-    background: pink;
+    /*background: pink;*/
     padding-top: 40px;
 }
         
         
 
-.about-me > h3{
+#about-me > h3{
     color: #ff1d1d; 
     font-weight: 700;
     text-align: center;
@@ -196,16 +196,205 @@ header{
 
 
 
-    
-    
+/* SKILLS SECTION
+///////////////////////////////////////////////// */
 
-        
-        
+#skills{
+    padding: 60px 0;
+    background: #E5EAEE;
+}
 
-        
+
+#skills > h3{
+    color: #ff1d1d;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 0.15em;
+}
+
+.skills-blurb{
+
+    max-width: 760px;
+    /*padding: 0 15px;*/
+    margin: 0px auto;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+
+
+}
+
+.success-story:hover{
+    text-decoration: none;
+}
+
+
+
+/* Treehouse Skills
+///////////////////////////////////////////////// */
+
+#treehouse-skills{
+    padding: 50px 0;
+    /*background: pink;*/
+}
+
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body {
+  /*font-family: "Open Sans", Arial;*/
+  background: #f9f9f9;
+}
+body a {
+  text-decoration: none;
+}
+body .team-treehouse h1, body .team-treehouse h2 {
+  text-align: center;
+  color: red;
+}
+body .team-treehouse h2 {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.pieChart {
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 1em;
+}
+
+.pie {
+  height: 12.5em;
+  width: 12.5em;
+  position: relative;
+  float: left;
+}
+.pie::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 1;
+  width: 7.5em;
+  height: 7.5em;
+  background: #f9f9f9;
+  border-radius: 50%;
+  top: 2.5em;
+  left: 2.5em;
+}
+
+.slice {
+  position: absolute;
+  width: 12.5em;
+  height: 12.5em;
+  clip: rect(0px, 12.5em, 12.5em, 6.25em);
+  animation: bake-pie 1s;
+}
+.slice span {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  width: 12.5em;
+  height: 12.5em;
+  border-radius: 50%;
+  clip: rect(0px, 12.5em, 12.5em, 6.25em);
+}
+
+.legend {
+  width: 300px;
+  padding-left: 1em;
+  float: left;
+}
+.legend ul {
+  list-style-type: none;
+  list-style-position: inside;
+  font-size: 0.8em;
+}
+.legend li {
+  height: 1.25em;
+  margin-bottom: 0.7em;
+  padding-left: 0.5em;
+  border-left: 1.25em solid black;
+}
+.legend em {
+  font-style: normal;
+font-size: 15px;
+color: black;
+}
+.legend span {
+  float: right;
+  font-weight: bold;
+  font-size: 15px;
+  color: black;
+}
+
+
+.team-treehouse > a:hover{
+    text-decoration: none;
+}
+
+
+
+
+/*   WORK section 
+
+////////////////////////////////////////// */
+
+
+/*WORK1*/
+#work1{
+    padding: 50px;
+    background: #ecf0f1;
+}
+
+
+#work1 > h3{
+
+    color: #ff1d1d;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 0.15em;
+}
+
+.work1, .work2, .work3{
+    margin: 0 auto;
+    max-width:720px; 
+    width: 100%
+}
+
+.work1 img, .work2 img, .work3 img{
+    margin: 0 auto;
+    max-width:720px; 
+    width: 100%
+}
+
+/*WORK 2*/
     
-    
-    
+#work2{
+    padding: 50px;
+    background: #7f8c8d;
+}
+
+#work3{
+    padding: 50px;
+    background: #95a5a6;
+}
+
+.work-title{
+    text-align: center;
+}
+
+
+
     
     
     
