@@ -1,32 +1,202 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Gerald Torres | Front End Web Developer</title>
+		<title>Gerald Torres | Web Developer</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+        <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+		
+
+
+        
         <link href='http://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css">
+		<link rel="stylesheet" href="css/animate.css">
 		<link rel="stylesheet" href="css/main.css">
 	</head>
 <body>
 
+
+<!--Navbar-->
+		<div class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+                <a class="main-logo pull-left" href="#">Web Developer</a>
+				
+                <div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			        </button>
+			        
+		        </div>    
+
+				
+				<div class="collapse navbar-collapse ">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#">ABOUT ME</a></li>
+						<li><a href="#">SKILLS</a></li>
+						<li><a href="#">WORK</a></li>
+		          		<li><a href="#">CONTACT</a></li>
+					</ul>
+
+				</div>
+			</div>
+		</div>	
+<!--End Navbar-->
     
 <!--Cover-->    
     
     <header>
     
-        <h1><span>GERALD TORRES</span></h1>
-        <p class="subtitle fadeIn">FRONT END WEB DEVELOPER</p>
-        <p class="subtitle">(Under construction)</p>
-        
+        <div class="header_contents">
+            <h1><span>GERALD TORRES</span></h1>
+            <p class="subtitle">WEB DESIGNER | WEB DEVELOPER</p>
+        </div>
     </header>
     
 <!--End Cover-->
-
+    
+    
+<!--About me-->
+    <section class="about-me">
+    
+        <h3>ABOUT ME</h3>
+        <div class="about-dp">
+            <div class="face-img"></div>
+            <div class="icon1"></div>
+            <div class="icon2"></div>
+            <div class="icon3"></div>
+            <div class="icon4"></div>
+        
+        </div>
+        <div class="blurb">
+            <p><strong>Hello, my name is Gerald Torres and I am a Web Developer.</strong> I have a passion for ensuring the user has great User Experience and I believe this is the most important requirement of any project. I believe that excellent interactivity between the user and the website is what makes the website a success. <br>I am based in London UK where I studied Multimedia Computing BSc at the University of Westminster.</p>
+        </div>
+     </section>
+        
+<!--End About me-->
+    
+<!--Skills-->    
+    
+    <section class="skill-div">
+        <h3>SKILLS</h3>
+        <div class="skill-lockup">
+        
+            <div class="skill-unit">
+                <div class="skill-label">Communication</div>
+                <div class="skill-icons skill-1">
+                    <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                    
+                
+                </div>
+            </div>
+            
+            <div class="skill-unit">
+                <div class="skill-label">Organisation</div>
+                <div class="skill-icons skill-2">
+                    <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                
+                </div>
+            </div>
+            
+            <div class="skill-unit">
+                <div class="skill-label">Learning</div>
+                <div class="skill-icons skill-3">
+                    <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                
+                </div>
+            </div>
+            
+            <div class="skill-unit">
+                <div class="skill-label">Teaching</div>
+                <div class="skill-icons skill-4">
+                    <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                
+                </div>
+            </div>
+            
+            <div class="skill-unit">
+                <div class="skill-label">Planning</div>
+                <div class="skill-icons skill-5">
+                    <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                
+                </div>
+            </div>
+            
+            <div class="skill-unit">
+                <div class="skill-label">Visual Design</div>
+                <div class="skill-icons skill-6">
+                    <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                
+                </div>
+            </div>
+            
+            <div class="skill-unit">
+                <div class="skill-label">Programming</div>
+                <div class="skill-icons skill-7">
+                    <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                
+                </div>
+            </div>
+            
+            <div class="skill-unit">
+                <div class="skill-label">UX Design</div>
+                <div class="skill-icons skill-8">
+                    <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                
+                </div>
+            </div>
+        
+        
+        </div>
+        
+        
+        
+    </section>
+<!--End Skills-->
+    
+    
+<!--Contact-->
+    
+    <section class="section-contact">
+        
+        <h3 class="contact">CONTACT</h3>
+    
+    
+    
+    </section>
+    
+    
+<!--End Contact-->    
+    
+        
+  <script src="http://code.jquery.com/jquery.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+		
+		 <!-- HeadRoom  -->
+		<style type="text/css">
+			.headroom {position: fixed;top: 0;left: 0;right: 0;transition: all .2s ease-in-out;}
+			.headroom--unpinned {top: -100px;}
+			.headroom--pinned {top: 0;}
+		</style>
+	   <script  type="text/javascript"  src="https://rawgithub.com/WickyNilliams/headroom.js/master/dist/headroom.js"></script>      
+	   <script  type="text/javascript"  src="https://rawgithub.com/WickyNilliams/headroom.js/master/src/jQuery.headroom.js"></script>
+		<script type="text/javascript">
+			$(".navbar-fixed-top").headroom();
+		</script>      
 	</body>
 
 </html>
