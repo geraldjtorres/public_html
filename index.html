@@ -19,12 +19,17 @@
 		
 
 
-        
+
         <link href='http://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="css/animate.css">
 		<link rel="stylesheet" href="css/main.css">
+
+
+        </script>
+
+
 	</head>
 <body>
 
@@ -62,7 +67,7 @@
     <header>
     
         <div class="header_contents">
-            <h1><span>GERALD TORRES</span></h1>
+             <h1><span>GERALD TORRES</span></h1>
             <p class="subtitle">WEB DESIGNER | WEB DEVELOPER</p>
         </div>
     </header>
@@ -85,118 +90,64 @@
         <div class="blurb">
             <p><strong>Hello, my name is Gerald Torres and I am a Web Developer.</strong> I have a passion for ensuring the user has great User Experience and I believe this is the most important requirement of any project. I believe that excellent interactivity between the user and the website is what makes the website a success. <br>I am based in London UK where I studied Multimedia Computing BSc at the University of Westminster.</p>
         </div>
+
+        <div class="clear_fix"></div>
      </section>
         
 <!--End About me-->
+   
     
-<!--Skills-->    
-    
-    <section class="skill-div">
-        <h3>SKILLS</h3>
-        <div class="skill-lockup">
-        
-            <div class="skill-unit">
-                <div class="skill-label">Communication</div>
-                <div class="skill-icons skill-1">
-                    <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
-                    
-                
-                </div>
-            </div>
-            
-            <div class="skill-unit">
-                <div class="skill-label">Organisation</div>
-                <div class="skill-icons skill-2">
-                    <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
-                
-                </div>
-            </div>
-            
-            <div class="skill-unit">
-                <div class="skill-label">Learning</div>
-                <div class="skill-icons skill-3">
-                    <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
-                
-                </div>
-            </div>
-            
-            <div class="skill-unit">
-                <div class="skill-label">Teaching</div>
-                <div class="skill-icons skill-4">
-                    <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
-                
-                </div>
-            </div>
-            
-            <div class="skill-unit">
-                <div class="skill-label">Planning</div>
-                <div class="skill-icons skill-5">
-                    <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
-                
-                </div>
-            </div>
-            
-            <div class="skill-unit">
-                <div class="skill-label">Visual Design</div>
-                <div class="skill-icons skill-6">
-                    <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
-                
-                </div>
-            </div>
-            
-            <div class="skill-unit">
-                <div class="skill-label">Programming</div>
-                <div class="skill-icons skill-7">
-                    <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
-                
-                </div>
-            </div>
-            
-            <div class="skill-unit">
-                <div class="skill-label">UX Design</div>
-                <div class="skill-icons skill-8">
-                    <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
-                
-                </div>
-            </div>
-        
-        
-        </div>
-        
-        
-        
-    </section>
-<!--End Skills-->
-    
-    
-<!--Contact-->
-    
-    <section class="section-contact">
-        
-        <h3 class="contact">CONTACT</h3>
-    
-    
-    
-    </section>
-    
-    
-<!--End Contact-->    
-    
-        
-  <script src="http://code.jquery.com/jquery.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-		
-		 <!-- HeadRoom  -->
-		<style type="text/css">
-			.headroom {position: fixed;top: 0;left: 0;right: 0;transition: all .2s ease-in-out;}
-			.headroom--unpinned {top: -100px;}
-			.headroom--pinned {top: 0;}
-		</style>
-	   <script  type="text/javascript"  src="https://rawgithub.com/WickyNilliams/headroom.js/master/dist/headroom.js"></script>      
-	   <script  type="text/javascript"  src="https://rawgithub.com/WickyNilliams/headroom.js/master/src/jQuery.headroom.js"></script>
+
 		<script type="text/javascript">
-			$(".navbar-fixed-top").headroom();
-		</script>      
+
+
+            $( document ).ready(function() {
+
+                $(".header_contents h1").fitText(1.2, { minFontSize: '20px', maxFontSize: '72px' });
+
+            });
+
+            (function( $ ){
+
+                  $.fn.fitText = function( kompressor, options ) {
+
+                    // Setup options
+                    var compressor = kompressor || 1,
+                        settings = $.extend({
+                          'minFontSize' : Number.NEGATIVE_INFINITY,
+                          'maxFontSize' : Number.POSITIVE_INFINITY
+                        }, options);
+
+                    return this.each(function(){
+
+                      // Store the object
+                      var $this = $(this);
+
+                      // Resizer() resizes items based on the object width divided by the compressor * 10
+                      var resizer = function () {
+                        $this.css('font-size', Math.max(Math.min($this.width() / (compressor*10), parseFloat(settings.maxFontSize)), parseFloat(settings.minFontSize)));
+                      };
+
+                      // Call once to set.
+                      resizer();
+
+                      // Call on resize. Opera debounces their resize by default.
+                      $(window).on('resize.fittext orientationchange.fittext', resizer);
+
+                    });
+
+                  };
+
+                })( jQuery );
+
+            </script>
+
+
+
+
+                
+
+
 	</body>
 
 </html>
