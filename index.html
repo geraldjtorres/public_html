@@ -20,6 +20,7 @@
         <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/animations.css" type="text/css">
 		<link rel="stylesheet" href="css/main.css">
 
 
@@ -27,7 +28,7 @@
 
 
 	</head>
-<body>
+<body >
 
 
 <!--Navbar-->
@@ -47,10 +48,9 @@
 				
 				<div class="collapse navbar-collapse ">
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="#">ABOUT ME</a></li>
-						<li><a href="#">SKILLS</a></li>
-						<li><a href="#">WORK</a></li>
-		          		<li><a href="#">CONTACT</a></li>
+						<li><a href="#about-me">ABOUT ME</a></li>
+						<li><a href="#skills">SKILLS</a></li>
+						<li><a href="#work1">WORK</a></li>
 					</ul>
 
 				</div>
@@ -60,9 +60,9 @@
     
 <!--Cover-->    
     
-    <header>
+    <header class="animatedParent">
     
-        <div class="header_contents">
+        <div class="header_contents animated fadeInDownShort">
              <h1><span>GERALD TORRES</span></h1>
             <p class="subtitle">WEB DESIGNER | WEB DEVELOPER</p>
         </div>
@@ -75,24 +75,16 @@
     <section id="about-me">
     
         <h3>ABOUT ME</h3>
-        <div class="about-dp">
+        <div class="about-dp animatedParent">
             <div class="face-img"></div>
-            <div class="icon1"></div>
-            <div class="icon2"></div>
-            <div class="icon3"></div>
-            <div class="icon4"></div>
+            <div class="icon1 animated fadeInLeftShort"></div>
+            <div class="icon2 animated fadeInLeftShort delay-250"></div>
+            <div class="icon3 animated fadeInRightShort delay-250"></div>
+            <div class="icon4 animated fadeInRightShort "></div>
         
         </div>
         <div class="blurb">
-            <p><strong>
-
-                Hi, I am a Web developer based in London. I love to take designs and build them into interactive, dynamic websites for mobile and web. 
-
-
-                <!-- Hello, my name is Gerald Torres and I am a Web Developer.</strong> I have a passion for ensuring the user has great User Experience and I believe this is the most important requirement of any project. I believe that excellent interactivity between the user and the website is what makes the website a success. <br>I am based in London UK where I studied Multimedia Computing BSc at the University of Westminster. -->
-
-
-            </p>
+            <p>Hi, I am a Web developer based in London. I love to take designs and build them into interactive, dynamic websites for mobile and web.</p>
         </div>
 
         <div class="clear_fix"></div>
@@ -107,8 +99,10 @@
         <h3>SKILLS</h3>
 
         <div class="skills-blurb">
-            <p>I am profficient in many of the basic skills needed from web development such as <span style="color: red; font-size: 30px">HTML, CSS and Javascript.</span> I have self taught these skills through an online teaching website known as Team Treehouse. After 6 months of self teaching, I managed to land my first job in the industry and featured me for a <a class="success-story"style="color: red; font-size: 30px" href="https://teamtreehouse.com/stories/gerald-torres" target="_blank">success story article.</a></p>
+            <p>I am profficient in many of the basic skills needed from web development such as <span style="color: red; font-size: 30px">HTML, CSS and Javascript.</span> I have self taught these skills through an online teaching website known as Team Treehouse. After 6 months of self teaching, I managed to land my first job in the industry and Treehouse featured me for their <a class="success-story"style="color: red; font-size: 30px" href="https://teamtreehouse.com/stories/gerald-torres" target="_blank">success story article.</a></p>
         </div>
+
+        <a class="cv_btn" href="img/gerald-torres-cv.pdf" target="_blank">Download CV</a>
 
     </section>
 
@@ -123,7 +117,7 @@
                 <h1>Team Treehouse Achievements</h1>
                 <h2><strong class='total'>0</strong> points have been earned</h2>
 
-                <div class="pieChart group">
+                <div class="pieChart group  ">
                   <div class="pie"></div>
                   <div class="legend"></div>
                 </div>
@@ -140,10 +134,10 @@
         <h3>WORK</h3>
 
 
-        <div class="work1">
-            <a href="http://www.foxtons.co.uk/" target="_blank"><img src="img/foxtons-screenshots.png"></a>
+        <div class="work1 animatedParent">
+            <a href="http://www.foxtons.co.uk/" target="_blank" class="animated fadeInDownShort"><img src="img/foxtons-screenshots.png"></a>
             <h3 class="work-title" style="color: red">Foxtons</h3>
-            <div class="blurb">
+            <div class="blurb animated fadeInLeftShort delay-250">
                 <p>Developing for this multi award winning website was a challenging experience for me. I had to create, implement and maintain web applications and web pages for an already high praised website which was ultimately rewarding.</p>
             </div>
 
@@ -154,10 +148,10 @@
 
     <section id="work2">
 
-        <div class="work2">
-            <a href="http://www.alexanderhall.co.uk/" target="_blank"><img src="img/ah-screenshots.png"></a>
+        <div class="work2 animatedParent">
+            <a href="http://www.alexanderhall.co.uk/" target="_blank" class="animated fadeInDownShort"><img src="img/ah-screenshots.png"></a>
             <h3 class="work-title" style="color: #ffffff">Alexander Hall</h3>
-            <div class="blurb" style="color: #ffffff">
+            <div class="blurb animated fadeInLeftShort delay-250" style="color: #ffffff">
                 <p>I am also currently responsible for updating and maintining Alexander Hall's mobile and desktop website. </p>
             </div>
 
@@ -169,13 +163,37 @@
 
     <section id="work3">
 
-        <div class="work3">
-            <a href="http://www.conveyan.co.uk/" target="_blank"><img src="img/conveyan-screenshots.png"></a>
+        <div class="work3 animatedParent">
+            <a href="http://www.conveyan.co.uk/" target="_blank" class="animated fadeInDownShort"><img src="img/conveyan-screenshots.png"></a>
             <h3 class="work-title" style="color: #ffffff">Conveyan</h3>
-            <div class="blurb" style="color: #ffffff">
+            <div class="blurb animated fadeInLeftShort delay-250" style="color: #ffffff">
                 <p>I was tasked with creating multiple designs and layouts for Conveyan's new website. </p>
             </div>
 
+        </div>
+
+
+    </section>
+
+
+<!-- CONTACT -->
+
+    <section id="connect" class="animatedParent">
+
+        <h3>Connect with me</h3>
+
+        <div class="blurb">
+            <p>Keep up with me on Instagram, Twitter and LinkedIn</p>
+        </div>
+
+        <div class="social-media animated fadeInUpShort">
+
+            <a class="instagram" href="http://instagram.com/GeraldJTorres" target="_blank"><img src="img/instagram-logo.png"></a>
+            <a class="twitter" href="http://twitter.com/GeraldJTorres" target="_blank"><img src="img/twitter-logo.png"></a>
+
+            <a class="linkedin" href="https://uk.linkedin.com/in/gerald-torres-92a24a94" target="_blank"><img src="img/linkedin-logo.png"></a>
+
+            <div class="clear_fix"></div>
         </div>
 
 
@@ -194,8 +212,7 @@
 
 
 
-
-
+<script src='js/css3-animate-it.js'></script>
 
 
 <script type="text/javascript">
@@ -205,7 +222,7 @@
 
         $(".header_contents h1").fitText(1, { minFontSize: '20px', maxFontSize: '72px' });
 
-        
+
 
 
     });
