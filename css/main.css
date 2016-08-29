@@ -20,7 +20,7 @@ body{
 ================================ */
 .navbar{
     background: rgba(255, 255, 255, 0.9);
- 
+
 }
 
 .main-logo {
@@ -44,16 +44,37 @@ header{
     background: url(../img/cover-bg.jpg) center center;
     background-size: cover;
     padding: 180px 0;
- 
+
+}
+
+.rache-header{
+  /*background: url(../img/paris-hero.jpg) center center !important;*/
+  /*background-size: cover;*/
+  padding: 350px 0 350px 0;
 }
 
 .header_contents{
     min-width: 335px;
     /*background: pink;*/
-    max-width: 600px;
+    max-width: 640px;
     width: 100%;
     margin: 0 auto;
 
+
+}
+
+.double_image{
+  display: block;
+  margin: 0 auto;
+
+}
+.triple_image_parent{
+  margin-left: 300px;
+}
+.triple_image{
+  display: inline-block;
+  margin-right: 50px;
+  width: 300px;
 
 }
 
@@ -71,7 +92,7 @@ header{
     display: inline-block;
     padding: 0.2em 0.5em;
     border: white solid 10px;
-  
+
 }
 
 
@@ -81,7 +102,17 @@ header{
     letter-spacing: 0.05em;
     color: white;
     font-size: 20px;
-    
+
+}
+
+.rache-subtitle{
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: black;
+  font-size: 44px;
+  font-family: 'Raleway', sans-serif !important;
+
 }
 
 /* About me
@@ -92,14 +123,20 @@ header{
     /*background: pink;*/
     padding-top: 40px;
 }
-        
-        
+
+.section-box{
+  padding-bottom: 50px;
+  /*background: pink;*/
+  padding-top: 40px;
+}
+
+
 
 #about-me > h3{
-    color: #ff1d1d; 
+    color: #ff1d1d;
     font-weight: 700;
     text-align: center;
-    
+
     margin-bottom: 30px;
     letter-spacing: 0.15em;
 }
@@ -108,13 +145,13 @@ header{
     display: flex;
     margin: 0 auto;
     margin-bottom: 50px;
-    
+
     align-items: center;
     justify-content: space-around;
 }
 
 .face-img{
-    
+
     width: 200px;
     height: 200px;
     background: url('../img/jeff2.png') no-repeat;
@@ -165,32 +202,42 @@ header{
     font-family: 'Open Sans', sans-serif;
 }
 
+.rache-blurb{
+  max-width: 820px;
+  /*padding: 0 15px;*/
+  margin: 0px auto;
+  font-size: 22px;
+  text-align: left;
+  font-weight: 300;
+  font-family: 'Raleway', sans-serif;
+}
+
 
 @media screen and (max-width: 650px){
     .about-dp{
         display:block;
         text-align: center;
     }
-    
+
     .about-dp > div{
         display: inline-block;
     }
-    
+
     .face-img{
         display: block;
         background-position: center center;
         background-repeat: no-repeat;
         width: 100%;
         margin-bottom: 30px;
-        
-        
+
+
     }
-    
-    
+
+
     .icon1, .icon2, .icon3, .icon4{
         margin :10px;
     }
-    
+
 
 }
 
@@ -380,7 +427,7 @@ color: black;
 
 
 
-/*   WORK section 
+/*   WORK section
 
 ////////////////////////////////////////// */
 
@@ -403,21 +450,44 @@ color: black;
 
 .work1, .work2, .work3{
     margin: 0 auto;
-    max-width:720px; 
+    max-width:720px;
     width: 100%
 }
 
 .work1 img, .work2 img, .work3 img{
     margin: 0 auto;
-    max-width:720px; 
+    max-width:720px;
     width: 100%
 }
 
 /*WORK 2*/
-    
+
 #work2{
     padding: 50px;
     background: #7f8c8d;
+}
+
+.bold{
+  font-weight: bold;
+  font-size:25px;
+}
+
+.r-section{
+  padding: 50px;
+  margin: 0 auto;
+}
+.parallax-window {
+    min-height: 500px;
+    background: transparent;
+}
+
+.parallax3 {
+    min-height: 720px;
+    background: transparent;
+}
+#r-work2{
+  padding: 50px;
+  /*background: #7f8c8d;*/
 }
 
 #work3{
@@ -430,7 +500,7 @@ color: black;
 }
 
 
-/*   CONNECT section 
+/*   CONNECT section
 
 ////////////////////////////////////////// */
 
@@ -441,15 +511,15 @@ color: black;
 }
 
 #connect > h3{
-    color: #ff1d1d; 
+    color: #ff1d1d;
     font-weight: 700;
     text-align: center;
-    
+
     /*margin-bottom: 30px;*/
     /*letter-spacing: 0.15em;*/
 }
-    
-    
+
+
 .social-media{
     width: 300px;
     margin: 0 auto;
@@ -470,20 +540,3 @@ color: black;
     /*float:left;*/
     margin-right: 45px;
 }
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
