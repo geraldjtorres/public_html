@@ -69,7 +69,9 @@ header{
 
 }
 .triple_image_parent{
-  margin-left: 300px;
+  margin: 0 auto;
+  /*border: 1px red solid;*/
+  width: 1100px;
 }
 .triple_image{
   display: inline-block;
@@ -208,6 +210,16 @@ header{
   margin: 0px auto;
   font-size: 22px;
   text-align: left;
+  font-weight: 300;
+  font-family: 'Raleway', sans-serif;
+}
+
+.end-blurb{
+  max-width: 820px;
+  /*padding: 0 15px;*/
+  margin: 0px auto;
+  font-size: 22px;
+  text-align: middle;
   font-weight: 300;
   font-family: 'Raleway', sans-serif;
 }
